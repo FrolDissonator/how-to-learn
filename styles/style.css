@@ -15,6 +15,7 @@
 }
 
 .header__title {
+  border: 2px solid red;
   display: flex;
   align-items: center;
   max-width: 730px;
@@ -26,6 +27,7 @@
 }
 
 .header__subtitle {
+  border: 2px solid red;
   position: absolute;
   max-width: 388px;
   left: 64px;
@@ -46,6 +48,7 @@
 }
 
 .header__main-illustration {
+  border: 2px solid red;
   position: absolute;
   right: 0px;
   bottom: 0px;
@@ -55,6 +58,7 @@
 }
 
 .header__square-pic {
+  border: 2px solid red;
   height: 568px;
   width: 568px;
   background-color: #2f80ed;
@@ -64,7 +68,10 @@
 }
 
 .content {
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .description {
@@ -190,6 +197,67 @@
   font-size: 18px;
   font-weight: normal;
   color: #000000;
+}
+
+.feynman {
+  border: 2px solid red;
+  height: 890px;
+  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.feynman__title {
+  border: 2px solid red;
+  margin: 0;
+  margin-top: 100px;
+  max-width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  text-align: center;
+  color: #000000;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  border: 2px solid red;
+  margin: 0;
+  padding: 0;
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #000000;
+  z-index: 1;
+}
+
+.feynman__link {
+  border: 2px solid red;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  color: #2f80ed;
+  text-decoration: none;
+  position: absolute;
+  top: 50%;
+  right: 48px;
+}
+
+.feynman__link::after {
+  content: " \2192";
+}
+
+.feynman__illustration {
+  border: 2px solid red;
+  height: 637px;
+  width: 867px;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: 0;
 }
 
 /* и элемента с модификатором вида ключ-значение */
