@@ -1,3 +1,12 @@
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .page {
   min-width: 1100px;
   max-width: 1600px;
@@ -24,6 +33,7 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
+  overflow: hidden;
 }
 
 .header__title {
@@ -61,6 +71,11 @@
   content: " \2192";
 }
 
+.header__link:hover {
+  opacity: 50%;
+  transition-delay: 2ms;
+}
+
 .header__main-illustration {
   position: absolute;
   right: 0px;
@@ -78,6 +93,11 @@
   top: 64px;
   right: 0;
 }
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
 
 .content {
   margin: 0;
@@ -135,6 +155,93 @@
   color: #000000;
 }
 
+.techniques {
+  padding-top: 100px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 80%;
+}
+
+.cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  max-width: 920px;
+}
+
+.cards__item {
+  margin-right: 100px;
+  margin-top: 60px;
+  max-width: 240px;
+}
+
+.cards__item:nth-of-type(3) {
+  margin-right: 0px;
+}
+
+.cards__image {
+  height: 160px;
+  width: 160px;
+  margin: 0 40px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  text-align: center;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-top: 43px;
+}
+
+.cards__description {
+  text-align: center;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 16px;
+}
+
+.video {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  max-height: 550px;
+}
+
+.video__iframes {
+  margin: 50px auto 0;
+  font-size: 0;
+  line-height: 0;
+}
+
+.video__iframe {
+  margin-right: 20px;
+}
+
+.video__iframe:last-of-type {
+  margin-right: 0;
+}
+
+.oakley {
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding-top: 160px;
+}
+
 .digits {
   box-sizing: border-box;
   padding-top: 100px;
@@ -170,6 +277,7 @@
 .table {
   width: 1100px;
   margin: 0 auto;
+  list-style-type: none;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -246,6 +354,11 @@
   content: " \2192";
 }
 
+.feynman__link:hover {
+  opacity: 50%;
+  transition-delay: 2ms;
+}
+
 .feynman__illustration {
   height: 637px;
   width: 867px;
@@ -253,6 +366,87 @@
   left: 0px;
   bottom: 0px;
   z-index: 0;
+}
+
+.khan {
+  padding-top: 105px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.khan__author {
+  margin: 0;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+}
+
+.khan__title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.khan__quote {
+  max-width: 790px;
+  margin: 0;
+  margin-top: 50px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__quote-author {
+  margin: 0;
+  margin-top: 36px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.khan__quote-author-subline {
+  margin: 0;
+  margin-top: 10px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.khan__book-container {
+  margin-top: 68px;
+  height: 620px;
+  overflow: hidden;
+  position: relative;
+}
+
+.khan__book-pic {
+  margin-right: 48px;
+  width: 608px;
+}
+
+.khan__buy-link {
+  text-decoration: none;
+  color: #2f80ed;
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  position: absolute;
+  top: 0;
+}
+
+.khan__buy-link::after {
+  content: " \2192";
+}
+
+.khan__buy-link:hover {
+  opacity: 50%;
+  transition-delay: 2ms;
 }
 
 .kaufman {
@@ -306,6 +500,35 @@
   top: 0px;
   right: -210px;
   z-index: 0;
+}
+
+.resources {
+  padding-top: 100px;
+  padding-bottom: 217px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.resources__logo-zone {
+  margin: 80px auto 0;
+  min-width: 1100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.resources__link {
+  margin: 0;
+}
+
+.resources__link:hover {
+  opacity: 50%;
+  transition-delay: 2ms;
+}
+
+.resources__logo {
+  width: 270px;
+  height: 38px;
 }
 
 .footer {
@@ -374,6 +597,11 @@
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
+}
+
+.footer__column-link:hover {
+  opacity: 50%;
+  transition-delay: 2ms;
 }
 
 .footer__social-icon {
